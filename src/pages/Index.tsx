@@ -1,12 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { UserHeader } from "@/components/UserHeader";
+import { BalanceCard } from "@/components/BalanceCard";
+import { CategoryTabs } from "@/components/CategoryTabs";
+import { ProductList } from "@/components/ProductList";
+import { BottomNav } from "@/components/BottomNav";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-app-gradient">
+      <UserHeader />
+      <BalanceCard />
+      
+      {/* Banner placeholder */}
+      <div className="mx-4 mb-6 h-32 rounded-2xl bg-muted/50"></div>
+      
+      <CategoryTabs />
+      <ProductList />
+      <BottomNav />
     </div>
   );
 };
